@@ -7,6 +7,87 @@
    <link rel="stylesheet" href="chapter04-project02.css" />
 </head>
 <body>
-
+  <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+	<div class="search">
+		<input type="search" placeholder="Search titles" name="search">
+		<input type="submit" value="Search">
+	</div>
+	<div class="actions">
+		<select name="Actions">
+			<option selected>Actions</option>
+			<option>Archive</option>
+			<option>Delete</option>
+		</select>
+		<input type="submit" value="Apply">
+		<select name="Genre">
+			<option>Genre</option>
+			<option>Baroque</option>
+			<option>Mannerism</option>
+			<option>Neo-Classical</option>
+			<option>Realism</option>
+			<option>Romanticism</option>
+		</select>
+		<input type="submit" value="Filter">
+	</div>
+	<div class="table">
+		<table>
+			<caption>Paintings</caption>
+			<tr>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col">Title</th>
+				<th scope="col">Artist</th>
+				<th scope="col">Year</th>
+				<th scope="col">Genre</th>
+				<th scope="col"></th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="index[]" value="0"></td>
+				<td><img src="images/05030.jpg" alt="Death of Marat"/></td>
+				<td>Death of Marat</td>
+				<td>David, Jacques-Louis</td>
+				<td>1793</td>
+				<td>Romanticism</td>
+				<td><button type="submit" ><img src="images/edit16.png" /> Edit</button></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="index[]" value="1"></</td>
+				<td><img src="images/120010.jpg" alt="Portrait of Eleanor of Toledo"/></td>
+				<td>Portrait of Eleanor of Toledo</td>
+				<td>Bronzino, Agnolo</td>
+				<td>1545</td>
+				<td>Mannerism</td>
+				<td><button type="submit" ><img src="images/edit16.png" /> Edit</button></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="index[]" value="2"></</td>
+				<td><img src="images/07020.jpg" alt="Liberty Leading the People"/></td>
+				<td>Liberty Leading the People</td>
+				<td>Delacroix, Eugene</td>
+				<td>1830</td>
+				<td>Romanticism</td>
+				<td><button type="submit" ><img src="images/edit16.png" /> Edit</button></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="index[]" value="3"></</td>
+				<td><img src="images/13030.jpg" alt="Arrangement in Grey and Black"/></td>
+				<td>Arrangement in Grey and Black</td>
+				<td>Whistler, James Abbott</td>
+				<td>1871</td>
+				<td>Realism</td>
+				<td><button type="submit" ><img src="images/edit16.png" /> Edit</button></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="index[]" value="4"></</td>
+				<td><img src="images/06010.jpg" alt="Mademoiselle Caroline Rivere"/></td>
+				<td>Mademoiselle Caroline Riviere</td>
+				<td>Ingres, Jean-Auguste</td>
+				<td>1806</td>
+				<td>Neo-Classicism</td>
+				<td><button type="submit" ><img src="images/edit16.png" /> Edit</button></td>
+			</tr>
+		</table>
+	</div>
+  </form>
 </body>
 </html>

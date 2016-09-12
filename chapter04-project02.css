@@ -7,3 +7,27 @@ body {
    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
    font-size: 100%;
 }
+.search, .actions {
+	background-color: #e6ffff;
+	border: solid 1px #66ffff;
+	width: 80%;
+	margin: 5px auto;
+	padding: 10px;
+}
+
+caption {
+	font-weight: bold;
+	background-color: #3399ff;
+	padding: 10px;
+}
+
+td {
+	padding: 10px;
+	font-style: italic;
+}
+
+.table {
+	width: 80%;
+	margin: auto;
+	border: solid 1px #66ffff;
+}
